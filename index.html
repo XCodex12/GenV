@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gen V</title>
+
+  <!-- Fonts and Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Material+Symbols+Rounded" rel="stylesheet" />
+
+  <!-- Main & Chatbot Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="stayela.css" />
+</head>
+
+<body>
+
+  <!-- Gen V Header -->
+  <header class="header">
+    <a href="index.html" class="logo"><i class="fa fa-plus-circle"></i> Gen V</a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="treatments.html">Treatments</a>
+      <a href="appointment.html">Book Appointment</a>
+      <a href="#">Patient Rights</a>
+    </nav>
+    <div id="menu-btn" class="fas fa-bars"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="home" id="home">
+    <div class="image"><img src="image/home-img.svg" alt="Home" /></div>
+    <div class="content">
+      <h3>What make us better, Makes you better.</h3>
+      <a href="appointment.html" class="btn">Book Appointment <span class="fas fa-chevron-right"></span></a>
+      <a href="tel:10177" class="btn">Call Ambulance <span class="fas fa-chevron-right"></span></a>
+    </div>
+  </section>
+
+  <!-- Icons -->
+  <section class="icons-container">
+    <div class="icons"><i class="fas fa-user-md"></i><h3>15+</h3><p>Doctors at work</p></div>
+    <div class="icons"><i class="fas fa-users"></i><h3>5000+</h3><p>Satisfied patients</p></div>
+    <div class="icons"><i class="fas fa-procedures"></i><h3>75+</h3><p>Bed facility</p></div>
+  </section>
+
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h1 class="heading">about <span>us</span></h1>
+    <div class="row">
+      <div class="image"><img src="image/about-img.svg" alt="About Us" /></div>
+      <div class="content">
+        <h3>We take care of your healthy life.</h3>
+        <p>At Gen V, we’re revolutionizing healthcare by bridging the gap between patients and hospitals through smart, digital solutions. From effortless online appointment bookings to our intelligent chatbot that listens to your symptoms and guides you with care, we make access to healthcare faster, simpler, and more human.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="blogs" id="blogs">
+    <h1 class="heading"><span>Our Coding Team</span></h1>
+    <div class="box-container">
+      <div class="box"><div class="image"><img src="image/A - Myself.jpg" alt=""></div><div class="content"><h3>Siyanda Xaba</h3></div></div>
+      <div class="box"><div class="image"><img src="image/A - Myself.jpg" alt=""></div><div class="content"><h3>Siyanda Xaba(Me)</h3></div></div>
+      <div class="box"><div class="image"><img src="image/A - Myself.jpg" alt=""></div><div class="content"><h3>Siyanda Xaba(Me again)</h3></div></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="tel:+0664428931"><i class="fas fa-phone"></i> 0664428931</a>
+        <a href="mailto:justinmabaso8@gmail.com"><i class="fas fa-envelope"></i> justinmabaso8@gmail.com</a>
+        <a href="https://www.google.com/maps/place/8+Ritson+Rd,+Musgrave,+Berea,+Durban,+4001,+South+Africa" target="_blank">
+          <i class="fas fa-map-marker-alt"></i> 8 Ritson Rd, Musgrave Berea</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Chatbot Button -->
+  <button id="chatbot-toggler">
+    <span class="material-symbols-outlined">mode_comment</span>
+    <span class="material-symbols-rounded">close</span>
+  </button>
+
+  <!-- Chatbot -->
+<div class="chatbot-popup">
+  <div class="chat-header">
+    <div class="header-info">
+      <!-- Green Chatbot Icon -->
+      <svg class="chatbot-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+        <circle cx="32" cy="32" r="32" fill="#2e7d32"/>
+        <path d="M20 24h24v16H20z" fill="#fff"/>
+        <circle cx="28" cy="32" r="2" fill="#2e7d32"/>
+        <circle cx="36" cy="32" r="2" fill="#2e7d32"/>
+      </svg>
+      <h2 class="logo-text">Gen V</h2>
+    </div>
+    <button id="close-chatbot" class="material-symbols-rounded">keyboard_arrow_down</button>
+  </div>
+
+  <div class="chat-body">
+    <div class="message bot-message">
+      <svg class="bot-avatar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+        <circle cx="32" cy="32" r="32" fill="#2e7d32"/>
+        <path d="M20 24h24v16H20z" fill="#fff"/>
+        <circle cx="28" cy="32" r="2" fill="#2e7d32"/>
+        <circle cx="36" cy="32" r="2" fill="#2e7d32"/>
+      </svg>
+      <div class="message-text">Hey there 👋<br>How can I help you today?</div>
+    </div>
+  </div>
+
+  <div class="chat-footer">
+    <form class="chat-form">
+      <textarea placeholder="Message..." class="message-input" required></textarea>
+      <div class="chat-controls">
+        <div class="file-upload-wrapper">
+          <input type="file" accept="images/*" id="file-input" hidden />
+        </div>
+        <button type="submit" id="send-message" class="material-symbols-rounded">arrow_upward</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+  <script src="java.js"></script>
+</body>
+</html>
